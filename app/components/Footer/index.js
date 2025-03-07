@@ -1,6 +1,6 @@
 
 export default function Footer () {
     return (
-        <h1>Footer</h1>
+        <p className="d-flex justify-content-center align-items-center">App desarrollada con Next.Js por Gastón García Bauer</p>
     )
 }

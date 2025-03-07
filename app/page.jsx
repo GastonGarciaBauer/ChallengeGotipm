@@ -1,6 +1,14 @@
+"use client"
+import React from "react"
+import { useRouter } from "next/navigation"
 import employees from "../utils/db"
 
 export default function Home() {
+  const router = useRouter()
+  function handleUpdate(id){
+    router.push(`/update/${id}`);
+  }
+  
   return (
     <table className="table">
       <thead>
@@ -24,7 +32,7 @@ export default function Home() {
             <td>{(employee.developer === true ? "SI" : "NO")}</td>
             <td>{employee.descripcion}</td>
             <td>
-              <button className="btn btn-warning">Modificar</button>
+              <button className="btn btn-warning" onClick={() => handleUpdate(employee.id)}>Modificar</button>
             </td>
             <td>
               <button className="btn btn-danger"> Eliminar</button>
