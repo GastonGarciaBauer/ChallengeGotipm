@@ -21,7 +21,7 @@ export default function Home() {
             <td>{employee.nombre}</td>
             <td>{employee.dni}</td>
             <td>{employee.fecha_nac}</td>
-            <td>{employee.developer}</td>
+            <td>{(employee.developer === true ? "SI" : "NO")}</td>
             <td>{employee.descripcion}</td>
             <td>
               <button className="btn btn-warning">Modificar</button>
