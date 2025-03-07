@@ -28,6 +28,7 @@ export default function Form() {
     })
     
     if(res.ok){
+      alert("Empleado agregado con éxito!")
       console.log("Empleado agregado con éxito!")
     } else {
       console.log("Error al agregar al empleado.")
