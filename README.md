@@ -1,4 +1,10 @@
 
+### NOTAS IMPORTANTES: ### 
+La app no está terminada. 
+Utilicé google, stackoverflow, documentación de bootstrap y documentación de next.js para realizarla.
+Se puede agregar un empleado a la base de datos a través del formulario de inserción, pero los empleados renderizados que se ven en la lista son hardcodeados de un array propio.
+Utilicé inteligencia artificial solo para algunos detalles de sintaxis que no recordaba.
+
 ### CONSULTAS PARA CREACIÓN DE BASE DE DATOS ###
 
 CREATE DATABASE IF NOT EXISTS employees_db;
@@ -13,6 +19,12 @@ CREATE TABLE `employees` (
   `dev` tinyint(1) NOT NULL,
   `description` varchar(255) DEFAULT NULL
 )
+
+### PAQUETES UTILIZADOS ###
+
+npm install bootstrap
+npm install mysql2 --> para manejar consultas asíncronas
+npm install cors
 
 ### Endpoint createEmployee ###
 
@@ -29,3 +41,4 @@ dni (string, requerido): El DNI del empleado (único).
 birth (string, requerido): La fecha de nacimiento del empleado en formato YYYY-MM-DD.
 dev (boolean, requerido): Indicador de si el empleado es un desarrollador (true) o no (false).
 description (string, opcional): Descripción adicional sobre el empleado.
+
