@@ -22,9 +22,9 @@ CREATE TABLE `employees` (
 
 ### PAQUETES UTILIZADOS ###
 
-npm install bootstrap
-npm install mysql2 --> para manejar consultas asíncronas
-npm install cors
+npm bootstrap
+npm mysql2 --> para manejar consultas asíncronas
+npm cors
 
 ### Endpoint createEmployee ###
 
